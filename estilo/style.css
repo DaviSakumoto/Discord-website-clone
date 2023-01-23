@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
 
 *{
   margin: 0px;
@@ -11,10 +13,11 @@
   --blue1: #404eed;
   --white1: #fff;
   --black1: #000;
+  --black2: #23272a;
+  --black3: #36393f;
 }
 
 html, body{
-  background-color: var(--blue1);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -57,8 +60,98 @@ html, body{
   font-size: 15px;
   font-weight: bold;
   margin-right: 50px;
+  transition: all .3s ease;
 }
 
 .nav-button a:hover{
-  box-shadow: 5px 10px 18px var(--black1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: var(--blue1);
 }
+
+header{
+  height: 700px;
+  background-color: var(--blue1);
+  background-image: url(../imagens/c40c84ca18d84633a9d86b4046a91437.svg), url(../imagens/8a8375ab7908384e1fd6efe408284203444.svg), url(../imagens/e6d57714479874c665b36c7adee76b1d.svg)  ;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:  right bottom, left bottom, center bottom  ;
+
+}
+
+
+
+.header-text {
+  width: 60vw;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content:flex-end;
+}
+
+
+.header-button{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.header-text-main, .header-text-para{
+  color: var(--white1);
+  text-align: center;
+}
+
+.header-text-main{
+  font-size: 3.5em;
+  font-family: 'Seymour One', sans-serif;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.header-text-para{
+  line-height: 1.7;
+  font-size: 19px;
+}
+
+.header-button{
+  align-items: center;
+}
+
+.header-button a {
+  font-weight: bold;
+}
+
+.header-button-1 a{
+  border: none;
+  padding: 20px 50px;
+  border-radius: 50px;
+  background-color: var(--white1);
+  transition: all .3s ease;
+}
+
+.header-button-1 a{
+  color: var(--black1);
+}
+
+.header-button-1 a:hover {
+  color: var(--blue1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.header-button-2 a{
+  border: none;
+  padding: 20px 50px;
+  border-radius: 50px;
+  background-color: var(--black2);
+  transition: all .3s ease;
+}
+
+.header-button-2 a{
+  color: var(--white1);
+}
+
+.header-button-2 a:hover{
+  background-color: var(--black3) ;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
