@@ -22,7 +22,11 @@ html, body{
 }
 
 .nav-logo img{
-  width: 150px;
+  width: 120px;
+}
+
+.nav-menu{
+  display: none;
 }
 
 .nav-list a {
@@ -37,7 +41,7 @@ html, body{
 .nav-body{
   display: flex;
   flex-direction: row;
-  padding: 40px;
+  padding: 30px 40px;
   justify-content: space-between;
   text-align: center;
 
@@ -68,15 +72,19 @@ html, body{
   color: var(--blue1);
 }
 
-header{
-  height: 700px;
+.header-body{
+  height: 750px;
+
   background-color: var(--blue1);
-  background-image: url(../imagens/c40c84ca18d84633a9d86b4046a91437.svg), url(../imagens/8a8375ab7908384e1fd6efe408284203444.svg), url(../imagens/e6d57714479874c665b36c7adee76b1d.svg)  ;
+  /* background-image: url(../imagens/c40c84ca18d84633a9d86b4046a91437.svg), url(../imagens/8a8375ab7908384e1fd6efe408284203444.svg), url(../imagens/e6d57714479874c665b36c7adee76b1d.svg)  ;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position:  right bottom, left bottom, center bottom  ;
+  background-position:  right bottom, left bottom, center bottom  ; */
 
 }
 
+.mobile-img{
+  display: none;
+}
 
 
 .header-text {
@@ -86,7 +94,7 @@ header{
   display: flex;
   flex-direction: column;
   gap: 50px;
-  justify-content:flex-end;
+
 }
 
 
@@ -153,5 +161,10 @@ header{
 .header-button-2 a:hover{
   background-color: var(--black3) ;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+main{
+  height: 500px;
+  background-color: lightblue;
 }
 
