@@ -1,5 +1,5 @@
 
-/* tela para celulares */
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 
 :root{
   --blue1: #404eed;
@@ -10,99 +10,47 @@
 }
 
 
+/* tela para tablet */
 
-@media (min-width: 320px) and (max-width:600px){
-
-    .nav-list{
-      display: none;
-    }
-
-    .nav-logo img{
-      width: 120px;
-    }
-
-    .nav-menu{
-      display: block;
-      font-size: 2em;
-    }
-
-    .nav-menu a{
-      color: var(--white1);
-    }
-
-    .nav-body{
-      padding: 30px 25px;
-    }
-
-    .nav-botoes{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
+@media (min-width: 768px) and (max-width:992px){
   
-    }
+  .header-body{
+    background-color: orange;
+  }
 
-    .nav-button a{
-      padding: 10px 15px;
-      justify-content: end;
-      font-size: 13px;
-    }
-
-    .header-text{
-   /*    display: none; */
-    }
-
-    .header-body{
-      background-color: var(--blue1);
-      width: 100%;
-    }
+}
 
 
-    
-.header-text {
-  width: 90%;
-  height: 60%;
-  margin: auto;
+
+/* tela para desktop */
+
+@media (min-width: 992px){
+
+  .header-body{
+    background-color: green;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+  
+  .nav-list{
+    display: block;
+  }
+
+  .nav-list ul{
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+  flex-direction: row;
+ 
 }
 
-.header-text-main{
-  font-size: 5vw;
-  text-align: left;
-
+.nav-list ul li{
+  margin-right: 30px;
 }
-
-.header-text-para{
-  line-height: 1.7;
-  font-size: 15.4px;
-  text-align: left;
-}
-
-.header-button{
-  margin-top: 20px;
-  align-items: flex-start;
-}
-
-.header-button-1 a i{
- margin-right: 10px;
-}
-
-
-
 
 .mobile-img{
-      height: 750px;
-      display: block;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-
-    
-
-    }
-
-    
+  display: none;
 }
+
+}
+

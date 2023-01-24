@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 
+/* Configs padrão.
+  retirando as margins e paddings padrao dos elementos
+ */
 
 *{
   margin: 0px;
@@ -9,6 +12,8 @@
   text-decoration: none;
 }
 
+/*  definindo variaveis de cores */
+
 :root{
   --blue1: #404eed;
   --white1: #fff;
@@ -17,26 +22,22 @@
   --black3: #36393f;
 }
 
+/* Mudando a fonte da pagina */
+
 html, body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-logo img{
-  width: 120px;
+/* configs do header */
+
+.header-body{
+  height: 750px;
+  background-color: var(--blue1);
+  position: relative;
+
 }
 
-.nav-menu{
-  display: none;
-}
-
-.nav-list a {
-  color: var(--white1);
-  font-weight: bolder;
-}
-
-.nav-list a:hover{
-  text-decoration: underline;
-}
+/*  configs do nav */
 
 .nav-body{
   display: flex;
@@ -44,90 +45,115 @@ html, body{
   padding: 30px 40px;
   justify-content: space-between;
   text-align: center;
-
 }
 
-.nav-list ul{
+/* logo do nav */
+
+.nav-logo img{
+  width: 120px;
+}
+
+/* desabilitando a list do nav */
+
+.nav-list{
+  display: none;
+}
+
+
+/* configs dos elementos ativos do nav */
+
+.nav-botoes{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.nav-list ul li{
-  margin-right: 30px;
-}
+
+/* configs do botão login do nav */
 
 .nav-button a {
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 50px;
   background-color: var(--white1);
   color: var(--black1);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   margin-right: 50px;
   transition: all .3s ease;
 }
+
+/*  efeito do botao login do nav */
 
 .nav-button a:hover{
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   color: var(--blue1);
 }
 
-.header-body{
-  height: 750px;
 
-  background-color: var(--blue1);
-  /* background-image: url(../imagens/c40c84ca18d84633a9d86b4046a91437.svg), url(../imagens/8a8375ab7908384e1fd6efe408284203444.svg), url(../imagens/e6d57714479874c665b36c7adee76b1d.svg)  ;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position:  right bottom, left bottom, center bottom  ; */
-
+/* mostrando o menu hamburguer na tela*/
+.nav-menu{
+  display: block;
 }
 
-.mobile-img{
-  display: none;
+/*  configs do menu hamburguer */
+.nav-menu a{
+  color: var(--white1);
+  font-size: 2em;
 }
 
+
+/* configs de conteudo do header */
 
 .header-text {
-  width: 60vw;
-  height: 80vh;
+  position:relative;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-
+  margin-top: 40px;
+  gap: 20px;
+ 
 }
 
+/* configs gerais da parte textual do header */
+
+.header-text-main, .header-text-para{
+  color: var(--white1);
+  text-align: left;
+}
+
+/* texto principal do header */
+
+.header-text-main{
+  font-family: 'Seymour One', sans-serif;
+  text-transform: uppercase;
+  font-size: 5vw;
+}
+
+/* paragrafo do header */
+
+.header-text-para{
+  line-height: 1.7;
+  font-size: 15.4px;
+}
+
+/* agrupamento de 2 botões */
 
 .header-button{
   display: flex;
   flex-direction: column;
   gap: 60px;
+  margin-top: 20px;
 }
 
-.header-text-main, .header-text-para{
-  color: var(--white1);
-  text-align: center;
-}
-
-.header-text-main{
-  font-size: 3.5em;
-  font-family: 'Seymour One', sans-serif;
-  line-height: 0.8;
-  text-transform: uppercase;
-}
-
-.header-text-para{
-  line-height: 1.7;
-  font-size: 19px;
-}
-
-.header-button{
-  align-items: center;
-}
+/*  peso da fonte do btn */
 
 .header-button a {
   font-weight: bold;
 }
+
+/* botão de download do windows */
 
 .header-button-1 a{
   border: none;
@@ -137,34 +163,65 @@ html, body{
   transition: all .3s ease;
 }
 
+/* cor do texto do botao de download */
+
 .header-button-1 a{
   color: var(--black1);
 }
 
-.header-button-1 a:hover {
-  color: var(--blue1);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
+/* margin do icone do btn download */
 
-.header-button-2 a{
-  border: none;
-  padding: 20px 50px;
-  border-radius: 50px;
-  background-color: var(--black2);
-  transition: all .3s ease;
-}
+.header-button-1 a i{
+  margin-right: 10px;
+  }
 
-.header-button-2 a{
-  color: var(--white1);
-}
+  /* hover do botao download */
 
+  .header-button-1 a:hover {
+    color: var(--blue1);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+
+  /* botao abrir discord no navegador  */
+
+  .header-button-2 a{
+    border: none;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: var(--black2);
+    transition: all .3s ease;
+  }
+  
+  /* cor do texto btn disc navegador */
+
+  .header-button-2 a{
+    color: var(--white1);
+  }
+
+/* hover do btn disc navegador */
 .header-button-2 a:hover{
   background-color: var(--black3) ;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-main{
-  height: 500px;
-  background-color: lightblue;
+/* img do header */
+
+.mobile-img{
+  padding: 10px;
+  position:absolute;
+  bottom: -14px;
+  left: -80px;
+
 }
 
+.mobile-img img{
+  width: 95vw;
+}
+
+
+
+main{
+  height: 500px;
+  background-color: var(--white1)
+}
