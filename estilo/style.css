@@ -31,7 +31,7 @@ html, body{
 /* configs do header */
 
 .header-body{
-  height: 750px;
+  height: 850px;
   background-color: var(--blue1);
   position: relative;
 
@@ -50,7 +50,7 @@ html, body{
 /* logo do nav */
 
 .nav-logo img{
-  width: 120px;
+  width: 170px;
 }
 
 /* desabilitando a list do nav */
@@ -73,11 +73,11 @@ html, body{
 /* configs do botão login do nav */
 
 .nav-button a {
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 50px;
   background-color: var(--white1);
   color: var(--black1);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   margin-right: 50px;
   transition: all .3s ease;
@@ -111,7 +111,7 @@ html, body{
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 75px;
   gap: 20px;
  
 }
@@ -135,7 +135,8 @@ html, body{
 
 .header-text-para{
   line-height: 1.7;
-  font-size: 15.4px;
+  font-size: 17px;
+  margin-bottom: 20px;
 }
 
 /* agrupamento de 2 botões */
@@ -143,7 +144,7 @@ html, body{
 .header-button{
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 75px;
   margin-top: 20px;
 }
 
@@ -157,10 +158,12 @@ html, body{
 
 .header-button-1 a{
   border: none;
-  padding: 20px 50px;
+  padding: 25px 60px;
   border-radius: 50px;
   background-color: var(--white1);
+  font-size: 18px;
   transition: all .3s ease;
+
 }
 
 /* cor do texto do botao de download */
@@ -187,9 +190,10 @@ html, body{
 
   .header-button-2 a{
     border: none;
-    padding: 20px 50px;
+    padding: 25px 60px;
     border-radius: 50px;
     background-color: var(--black2);
+    font-size: 18px;
     transition: all .3s ease;
   }
   
@@ -212,6 +216,7 @@ html, body{
   position:absolute;
   bottom: -14px;
   left: -80px;
+
 
 }
 
