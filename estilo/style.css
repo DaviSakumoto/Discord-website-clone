@@ -31,7 +31,7 @@ html, body{
 /* configs do header */
 
 .header-body{
-  height: 850px;
+  height: 750px;
   background-color: var(--blue1);
   position: relative;
 
@@ -50,7 +50,8 @@ html, body{
 /* logo do nav */
 
 .nav-logo img{
-  width: 170px;
+  width: 120px;
+  cursor: pointer;
 }
 
 /* desabilitando a list do nav */
@@ -73,7 +74,7 @@ html, body{
 /* configs do botão login do nav */
 
 .nav-button a {
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
   background-color: var(--white1);
   color: var(--black1);
@@ -111,7 +112,7 @@ html, body{
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
+  margin-top: 40px;
   gap: 20px;
  
 }
@@ -135,7 +136,7 @@ html, body{
 
 .header-text-para{
   line-height: 1.7;
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -158,7 +159,7 @@ html, body{
 
 .header-button-1 a{
   border: none;
-  padding: 25px 60px;
+  padding: 20px;
   border-radius: 50px;
   background-color: var(--white1);
   font-size: 18px;
@@ -190,7 +191,7 @@ html, body{
 
   .header-button-2 a{
     border: none;
-    padding: 25px 60px;
+    padding: 20px ;
     border-radius: 50px;
     background-color: var(--black2);
     font-size: 18px;
