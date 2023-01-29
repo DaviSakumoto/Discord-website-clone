@@ -231,3 +231,58 @@ main{
   height: 500px;
   background-color: var(--white1)
 }
+
+
+.menu-overlay{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.menu-container{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 320px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: var(--white1);
+}
+
+.menu-overlay-content{
+   padding: 30px 15px 30px 20px ;
+
+}
+
+#menuOverImg{
+  width: 120px;
+}
+
+
+.menu-overlay-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+.separador{
+  height: 3px;
+  border-bottom: 1px solid rgb(243, 240, 240);
+  margin-top: 35px;
+}
+
+.meanu-overlay-list{
+    padding: 20px;
+}
+
+.meanu-overlay-list ul li{
+  margin-bottom: 24px;
+}
