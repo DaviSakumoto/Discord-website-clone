@@ -16,10 +16,14 @@
 
 :root{
   --blue1: #404eed;
+  --blue2: #83b7f4;
+  --blue3: #5865f2;
+  --blue4: #7983f5;
   --white1: #fff;
   --black1: #000;
   --black2: #23272a;
   --black3: #36393f;
+  --gray1: #f6f6f6;
 }
 
 /* Mudando a fonte da pagina */
@@ -234,7 +238,7 @@ main{
 
 
 .menu-overlay{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -242,6 +246,7 @@ main{
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -251,18 +256,19 @@ main{
   top: 0;
   right: 0;
   height: 100%;
-  width: 320px;
+  width: 0px;
   border-radius: 10px 0px 0px 10px;
   background-color: var(--white1);
+  transition: width .5s ease;
 }
 
 .menu-overlay-content{
-   padding: 30px 15px 30px 20px ;
-
+   padding: 30px 15px 60px 20px ;
 }
 
 #menuOverImg{
   width: 120px;
+  cursor: pointer;
 }
 
 
@@ -279,10 +285,46 @@ main{
   margin-top: 35px;
 }
 
-.meanu-overlay-list{
-    padding: 20px;
+.menu-overlay-list{
+    padding: 20px 5px;
 }
 
-.meanu-overlay-list ul li{
-  margin-bottom: 24px;
+.menu-overlay-list ul li{
+  padding: 10px;
+  border-radius: 10px;
+/*   background-color: var(--gray1); */
 }
+
+.menu-overlay-list ul li a{
+  color: var(--black1);
+  font-size: 15px;
+}
+
+.menu-overlay-list ul li a:hover{
+  text-decoration: underline;
+}
+
+#menuClose{
+  cursor: pointer;
+}
+
+.menu-overlay-button{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: var(--blue3);
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white1);
+  font-size: 14px;
+  margin-top: 50px;
+
+}
+
+.menu-overlay-button:hover{
+  background-color: var(--blue4);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+

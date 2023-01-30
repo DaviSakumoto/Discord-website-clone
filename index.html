@@ -40,7 +40,7 @@
               <a href="#">Login</a>
             </div>
     
-            <div class="nav-menu">
+            <div id="menuOpen" class="nav-menu">
               <a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
             </div>
           </div>
@@ -89,16 +89,17 @@
 
       <!-- Modal -->
 
-      <div class="menu-overlay">
-        <div class="menu-container">
+      <div  id="overMenu" class="menu-overlay">
+        <div  id="containerMenu" class="menu-container">
           <div class="menu-overlay-content">
               <div class="menu-overlay-head">
+
                   <img  id="menuOverImg" src="imagens/discord-logo-black.png">
-                  <i class="fa-solid fa-x"></i>
+                  <i id="menuClose" class="fa-solid fa-x"></i>
               </div>
               <div class="separador"></div>
 
-              <div class="meanu-overlay-list">
+              <div class="menu-overlay-list">
                   <ul>
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Download</a></li>
@@ -112,13 +113,13 @@
                   </ul>
               </div>
               <div class="menu-overlay-button">
-
+                <i class="fa fa-download" aria-hidden="true"></i> Baixar para Windows
               </div>
           </div>
         </div>
       </div>
 
 
-
+      <script src="js/main.js"></script>
 </body>
 </html>
