@@ -10,12 +10,20 @@ window.addEventListener('click', outsideClick)
 function openModal(){
   menuOverlay.style.display = 'block';
   contentMenu.style.width  = '320px';
+  document.body.style.overflow = "hidden";
+  document.body.style.height = "100%";
 }
+
+
 
 function closeModal(){
   menuOverlay.style.display = 'none';
   contentMenu.style.width  = '0px';
+  document.body.style.overflow = "auto"; 
+  document.body.style.height = "auto"
 }
+
+
 
 
 function outsideClick(e) {

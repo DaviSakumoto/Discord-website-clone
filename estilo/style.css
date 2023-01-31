@@ -230,13 +230,6 @@ html, body{
 }
 
 
-
-main{
-  height: 500px;
-  background-color: var(--white1)
-}
-
-
 .menu-overlay{
   display: none;
   position: fixed;
@@ -328,3 +321,36 @@ main{
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+
+.menu-overlay-list ul li #chev{
+  margin-right: 10px;
+}
+
+
+ #current{
+  background-color: var(--gray1);
+}
+
+#current a {
+  color: var(--blue2);
+}
+
+main{
+  height: 500px;
+}
+
+main.servidores{
+  background-color: var(--white1)
+}
+
+main.voz{
+  background-color: var(--gray1)
+}
+
+main.mod{
+  background-color: var(--white1)
+}
+
+main.conexao{
+  background-color: var(--gray1)
+}
