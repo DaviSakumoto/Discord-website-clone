@@ -48,7 +48,24 @@
     padding-left: 40px;
   }
 
+  main{
+    background-color: red;
+    height: 80%;
+  }
 
+  .main-body{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .body-text{
+  }
+
+  .main-images{
+    width: 100px;
+  }
  
 
 
@@ -161,6 +178,33 @@
   display: none;
 }
 
+
+main{
+  height: 850px;
+  padding: 40px 20px;
+}
+
+.main-body{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.body-text{
+  width: 30%;
+}
+
+.main-text{
+  font-size: 2.5em;
+}
+
+.p-text{
+  font-size: 18px;
+}
+
+.main-images{
+  width: 55%;
+}
 
 
 

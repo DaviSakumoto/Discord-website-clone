@@ -35,7 +35,7 @@ html, body{
 /* configs do header */
 
 .header-body{
-  height: 750px;
+  height: 800px;
   background-color: var(--blue1);
   position: relative;
 
@@ -336,11 +336,21 @@ html, body{
 }
 
 main{
-  height: 500px;
+  position: relative;
+  height: 60%;
+  padding: 90px 20px 10px 20px;
+}
+
+
+.main-body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 main.servidores{
   background-color: var(--white1)
+
 }
 
 main.voz{
@@ -354,3 +364,21 @@ main.mod{
 main.conexao{
   background-color: var(--gray1)
 }
+
+.main-images{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.main-text{
+  margin-bottom: 30px;
+  font-size: 1em;
+  color: var(--black1);
+  font-weight: 800;
+}
+
+.p-text{
+  line-height: 1.7;
+  font-size: 15px;
+}
+
