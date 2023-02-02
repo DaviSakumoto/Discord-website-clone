@@ -49,25 +49,66 @@
   }
 
   main{
-    background-color: red;
-    height: 80%;
+    height: 580px;
   }
 
   .main-body{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
   }
 
-
+  .main-text{
+    font-size: 2.2em;
+  }
 
   .body-text{
+    width: 50%;
   }
 
   .main-images{
-    width: 100px;
+    width: 380px;
+    margin-right: 20px;
+  }
+
+  .voz, .mod{
+    height: 450px;
+  }
+
+  .voz .main-body{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .conexao{
+    height: 700px;
   }
  
 
+  .conexao .main-body{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+        align-items: center;
+  
+  }
+
+
+  .conexao .main-body .main-images{
+    width: 700px;
+  }
+
+
+  .conexao .main-body .body-text{
+    width: 90%;
+    text-align: center;
+  }
+
+  .conexao .main-body .body-text .main-text{
+    font-size: 2.6em;
+    line-height: .8;
+  }
 
 }
 
