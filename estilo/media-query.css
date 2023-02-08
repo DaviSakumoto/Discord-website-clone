@@ -3,10 +3,15 @@
 
 :root{
   --blue1: #404eed;
+  --blue2: #83b7f4;
+  --blue3: #5865f2;
+  --blue4: #7983f5;
   --white1: #fff;
   --black1: #000;
   --black2: #23272a;
   --black3: #36393f;
+  --black4: #23272a;
+  --gray1: #f6f6f6;
 }
 
 
@@ -82,7 +87,7 @@
   }
 
   .conexao{
-    height: 700px;
+    height: 980px;
   }
  
 
@@ -109,6 +114,35 @@
     font-size: 2.6em;
     line-height: .8;
   }
+
+  .conexao .botao{
+    width: 40%;
+    margin: auto;
+  }
+
+  .footer .social-texto, .footer .redeSocial{
+    width: 40%;
+  }
+
+  .footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--blue3);
+    margin-bottom: 30px;
+  }
+
+  .listas {
+    border: none;
+  }
+
+  .footer{
+    height: 950px;
+  }
+
+ 
+
+
+  
 
 }
 
