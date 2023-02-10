@@ -352,6 +352,8 @@ main{
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid var(--blue3);
+
+ 
 }
 
 .footer-wrapper .social{
@@ -365,8 +367,20 @@ main{
 }
 
 .footer-wrapper .listas{
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+   margin-top: 6px;
+  border: none;
   
+}
+
+.footer{
+  height: 650px;
+}
+
+.footer-logo{
+  margin-top: 20px;
 }
 
 
