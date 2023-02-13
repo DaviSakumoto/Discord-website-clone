@@ -1,3 +1,6 @@
+
+
+
 const menuOverlay = document.getElementById("overMenu");
 const openMenu = document.getElementById("menuOpen");
 const closeMenu = document.getElementById("menuClose");
@@ -15,7 +18,6 @@ function openModal(){
 }
 
 
-
 function closeModal(){
   menuOverlay.style.display = 'none';
   contentMenu.style.width  = '0px';
@@ -31,3 +33,6 @@ function outsideClick(e) {
     closeModal()
   }
 }
+
+
+
