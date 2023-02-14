@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*  definindo variaveis de cores */
+
+:root{
+  --blue1: #404eed;
+  --blue2: #83b7f4;
+  --blue3: #5865f2;
+  --blue4: #7983f5;
+  --white1: #fff;
+  --black1: #000;
+  --black2: #23272a;
+  --black3: #36393f;
+  --black4: #23272a;
+  --gray1: #f6f6f6;
+}
+
+
+
+.header-body{
+  height: 500px;
+  background-color: var(--black2);
+  position: relative;
+}
+
+.text-main, .text-p, .button-text{
+  color: var(--white1);
+}
+
+.text-main{
+  font-family: 'Seymour One', sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+
+.text-p{
+  font-size: 17.5px;
+  line-height: 1.7;
+}
+
+.header-button-1{
+  width: 100%;
+}
+
+.header-button-1 a{
+ background-color: var(--blue3);
+ color: var(--white1);
+ display: inline-block;
+ width: 100%;
+ text-align: center;
+}
+
+.header-button-1 a:hover{
+  color: var(--white1);
+  background-color: #7983f5;
+}
+
+.button-text{
+  text-align: center;
+}
+
+.header-button{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
