@@ -24,11 +24,17 @@
 }
 
 
+.header-text{
+  height: 380px;
+}
+
 
 .header-body{
-  height: 600px;
+  height: 700px;
   background-color: var(--black2);
-  position: relative;
+  margin-bottom: 50px;
+  
+
 }
 
 .text-main, .text-p, .button-text{
@@ -80,17 +86,17 @@
   height: 3000px;
   background-color: var(--white1);
 
+
 }
 
 .card-os{
-  height: 360px;
+  height: 450px;
   width: 90%;
   margin: auto;
   border-radius: 15px;
   background-color: var(--gray1);
   margin-bottom: 50px;
   position: relative;
-
 }
 
 .card-wrapper{
@@ -129,12 +135,11 @@
   height: 200px;
   overflow: hidden;
   border: 1px solid red;
+
 }
 
 .card-os-img img{
-width: 300px;
-margin: auto;
+width: 80%;
 
- 
-  
+
 }
