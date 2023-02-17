@@ -96,7 +96,11 @@
   border-radius: 15px;
   background-color: var(--gray1);
   margin-bottom: 50px;
-  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
 }
 
 .card-wrapper{
@@ -136,10 +140,18 @@
   overflow: hidden;
   border: 1px solid red;
 
+  display: flex;
+  justify-content: center;
+
+
 }
 
 .card-os-img img{
-width: 80%;
+ 
 
+  margin: auto;
+  bottom: 0px;
 
+  
+  width: 50%;
 }
