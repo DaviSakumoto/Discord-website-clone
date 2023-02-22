@@ -26,11 +26,12 @@
 
 .header-text{
   height: 380px;
+
 }
 
 
 .header-body{
-  height: 700px;
+  height: 500px;
   background-color: var(--black2);
   margin-bottom: 50px;
   
@@ -83,9 +84,9 @@
 
 
 .main-section{
-  height: 3000px;
+  height: 2300px;
   background-color: var(--white1);
-  margin-top: 250px;
+  margin-top: 50px;
 }
 
 
@@ -110,6 +111,7 @@
   height: 300px;
   width: 90%;
   background-color: var(--gray1);
+  padding-left: 30px;
 
 }
 
@@ -174,18 +176,24 @@
 
 .card-diff-wrapper {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  margin: auto;
-  border: 1px solid red;
+  gap: 20px;
+ 
+
+ 
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card-text-title {
   font-size: 20px;
-
 }
 
 .card-text-p {
@@ -199,8 +207,20 @@
   color: #fff ;
   background-color: var(--black2);
  padding: 30px 40px;
+ border-radius: 28px;
+
+}
 
 
+.card-button a:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
+.section-two {
+  height: 500px;
+  background-color: var(--blue3);
+}
 
+.footer {
+  margin-top: 70px;
 }
