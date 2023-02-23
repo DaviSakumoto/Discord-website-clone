@@ -1,4 +1,15 @@
-
+:root{
+  --blue1: #404eed;
+  --blue2: #83b7f4;
+  --blue3: #5865f2;
+  --blue4: #7983f5;
+  --white1: #fff;
+  --black1: #000;
+  --black2: #23272a;
+  --black3: #36393f;
+  --black4: #23272a;
+  --gray1: #f6f6f6;
+}
 
 @media (min-width: 768px) and (max-width:999px){
 
@@ -11,9 +22,44 @@
 
 @media only screen and (min-width: 1000px){
 
-  .header-text {
-   
+  .header-body {
+    background-color: var(--black2);
+    height: 820px;
+    background-image: none;
   }
+
+  .header-text {
+    margin-left: 40px;
+  }
+
+  .header-button {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .text-main {
+    font-size: 3em;
+    line-height: 1;
+  }
+
+  .text-p {
+    font-size: 20px;
+  }
+
+  .header-button-1 a{
+    width: 80%;
+  }
+
+ .header-wrapper {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .header-img img {
+    width: 850px;
+    margin-top: 80px;
+ }
+
 
 
 }
