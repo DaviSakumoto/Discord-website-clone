@@ -61,5 +61,26 @@
  }
 
 
+ .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 92%;
+  margin: auto;
+  gap: 20px;
+ }
+
+ .card-os {
+    height: 600px;
+    width: 100%;
+ }
+
+ .card-os-img {
+  justify-content: end;
+ }
+
+ .card-os-img img {
+  width: 92%;
+ }
+
 
 }
