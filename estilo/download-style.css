@@ -29,6 +29,10 @@
 
 }
 
+.header-img {
+  display: none;
+}
+
 
 .header-body{
   height: 500px;
@@ -84,10 +88,11 @@
 
 
 .main-section{
-  height: 2300px;
+  height: 2100px;
   background-color: var(--white1);
   margin-top: 50px;
 }
+
 
 
 
