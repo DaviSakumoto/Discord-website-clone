@@ -6,6 +6,9 @@ const openMenu = document.getElementById("menuOpen");
 const closeMenu = document.getElementById("menuClose");
 const contentMenu = document.getElementById('containerMenu');
 
+
+
+
 openMenu.addEventListener('click', openModal);
 closeMenu.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick)
@@ -36,3 +39,12 @@ function outsideClick(e) {
 
 
 
+
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.myNav');
+  if(window.scrollY > 0) {
+    nav.style.backgroundColor = '#5865f2';
+  } else {
+    nav.style.backgroundColor = 'transparent';
+  }
+});

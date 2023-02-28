@@ -1,0 +1,14 @@
+
+
+.header-body {
+   background: linear-gradient(to bottom, #4262dd, #e28aca);
+   height: 1200px;
+}
+
+.myNav {
+  position: sticky;
+  top: 0;
+}
+
+
+
