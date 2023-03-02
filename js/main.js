@@ -44,7 +44,7 @@ window.addEventListener('scroll', function() {
   const nav = document.querySelector('.myNav');
   if(window.scrollY > 0) {
     nav.style.backgroundColor = '#5865f2';
-  } else {
+  } else { transparent
     nav.style.backgroundColor = 'transparent';
   }
 });

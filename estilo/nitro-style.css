@@ -2,7 +2,7 @@
 
 .header-body {
    background: linear-gradient(to bottom, #4262dd, #e28aca);
-   height: 1200px;
+   height: 1420px;
 }
 
 .myNav {
@@ -10,5 +10,51 @@
   top: 0;
 }
 
+.header-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.header-imagem {
+  text-align: center;
+}
+
+.header-imagem img{
+  width: 300px;
+ 
+}
+
+ .header-titulo {
+ color: #fff;
+ font-family: 'Seymour One', sans-serif;
+ font-size: 1.8em;
+ text-align: center;
+ line-height: 1;
+
+}
 
 
+.header-p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.header-cards {
+
+}
+
+.header-card {
+  height: 360px;
+  width: 90%;
+  margin: auto;
+  background-color: red;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+}

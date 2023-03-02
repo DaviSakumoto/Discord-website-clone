@@ -260,8 +260,12 @@ html, body{
 
 
 @keyframes slideIn {
-  from {right: -300px; opacity: 0}
-  to {left: 100; opacity: 1}
+  from {
+    right: -300px; opacity: 0
+  }
+  to {
+    left: 100; opacity: 1
+  }
 }
 
 
