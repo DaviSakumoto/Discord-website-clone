@@ -1,3 +1,16 @@
+:root{
+  --blue1: #404eed;
+  --blue2: #83b7f4;
+  --blue3: #5865f2;
+  --blue4: #7983f5;
+  --white1: #fff;
+  --black1: #000;
+  --black2: #23272a;
+  --black3: #36393f;
+  --black4: #23272a;
+  --gray1: #f6f6f6;
+}
+
 
 
 .header-body {
@@ -73,12 +86,19 @@
   width: 200px;
 }
 
+.card-title2 {
+  width: 100px;
+}
+
+
 .card-wrapper {
-  padding: 25px;
+  position: relative;
+  padding: 30px;
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  justify-content: space-between;
 }
 
 .card-content {
@@ -113,9 +133,21 @@
 }
 
 .card-button {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
+
+  height: 50px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 50px;
   text-align: center;
-  justify-content: flex-end
+  line-height: 50px;
+  color: #000;
+  font-size: 18px;
+  transition: all .3s ease-in-out;
+
 }
+
+.card-button:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: var(--blue1);
+}
+
