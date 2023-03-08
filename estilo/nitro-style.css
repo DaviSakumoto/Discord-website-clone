@@ -74,12 +74,12 @@
 
 
 .header-card.-blue {
-  background: linear-gradient(to right bottom, #007cc2, #5466f0); 
+  background: linear-gradient(to left bottom, #007cc2, #5466f0);
  
 }
 
 .header-card.-purple {
-  background: linear-gradient(to left bottom, #8547c6, #ab5d8a);
+  background: linear-gradient(to right bottom, #8547c6, #b44daf);
 }
 
 .card-title {
@@ -151,3 +151,21 @@
   color: var(--blue1);
 }
 
+.card-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.card-item img {
+  width: 15px;
+}
+
+.rocket {
+  width: 25px;
+}
+
+.card-content {
+  gap: 15px;
+}
