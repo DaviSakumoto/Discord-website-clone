@@ -226,6 +226,36 @@
   line-height: 1.5;
   text-align: center;
 
- 
 }
 
+
+.btn-vantagens {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--black2);
+  height: 45px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white1);
+  line-height: 45px ;
+  transition: .3s linear;
+
+}
+
+
+.btn-vantagens:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: var(--black3);
+  transform: translate(0, -1px);
+}
+
+.main-section {
+  
+}
+
+.section-plano {
+  height: 1200px;
+  background-color: red;
+}
