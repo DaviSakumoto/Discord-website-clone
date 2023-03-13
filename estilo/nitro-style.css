@@ -252,10 +252,24 @@
 }
 
 .main-section {
-  
+  height: 1550px;
 }
 
 .section-plano {
   height: 1200px;
-  background-color: red;
+  background-color: var(--gray1)
+}
+
+.second-wrapper {
+  padding: 60px 30px;
+}
+
+.second-texto p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+
+
 }
