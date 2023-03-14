@@ -270,6 +270,22 @@
   font-weight: bold;
   width: 80%;
   margin: auto;
-
-
 }
+
+.tabela {
+ padding-top: 60px;
+ margin: 2%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
