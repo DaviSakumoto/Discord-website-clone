@@ -257,7 +257,8 @@
 
 .section-plano {
   height: 1200px;
-  background-color: var(--gray1)
+  background-color: var(--gray1);
+  padding-top: 50px;
 }
 
 .second-wrapper {
@@ -270,22 +271,33 @@
   font-weight: bold;
   width: 80%;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .tabela {
- padding-top: 60px;
- margin: 2%;
-}
-
-.grid-container {
+  padding: 60px 30px;
+  margin-top: 50px;
+  width: 100%;
+  margin: auto;
+  grid-gap: 30px;
+  
   display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 20px;
+  grid-template-columns: 2fr 1fr 1fr
+
 }
 
-
-.grid-item {
-  padding: 20px;
-  text-align: center;
+.linha {
+  border-bottom: 1px solid #ccc;
 }
 
+.row {
+  font-size: 14px;
+}
+
+.row img.nitro {
+  width: 60px;
+}
+
+.row img.check {
+  width: 15px;
+}
