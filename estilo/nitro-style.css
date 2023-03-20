@@ -256,7 +256,7 @@
 }
 
 .section-plano {
-  height: 1200px;
+  height: 1260px;
   background-color: var(--gray1);
   padding-top: 50px;
 }
@@ -301,3 +301,56 @@
 .row img.check {
   width: 15px;
 }
+
+.row.-second {
+  display: flex;
+  justify-content: center;
+}
+
+.row.-first {
+  display: flex;
+  justify-content: center;
+}
+
+.planos {
+  padding: 30px;
+}
+
+.planos-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.plano {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.plano img {
+  width: 100px;
+}
+
+.plano a {
+  display: inline-block;
+  height: 50px;
+  width: 250px;
+  color: var(--white1);
+  background-color: var(--blue3);
+  border-radius: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+  transition: all .3s ease-in;
+
+} 
+
+.plano a:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: var(--blue4);
+}
+
+
