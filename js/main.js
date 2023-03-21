@@ -29,13 +29,14 @@ function closeModal(){
 }
 
 
-
-
 function outsideClick(e) {
   if (e.target == menuOverlay) {
     closeModal()
   }
 }
+
+
+
 
 
 
@@ -47,4 +48,13 @@ window.addEventListener('scroll', function() {
   } else { transparent
     nav.style.backgroundColor = 'transparent';
   }
+});
+
+const options = document.querySelectorAll('.po');
+
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    options.forEach(option => option.classList.remove('selected'));
+    option.classList.add('selected');
+  });
 });

@@ -353,4 +353,39 @@
   background-color: var(--blue4);
 }
 
+.perguntas {
+  height: 650px;
+  padding: 40px 30px;
+}
 
+.selecionar {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.selecionar-titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.selecionar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.selecionar-item li {
+  cursor: pointer;
+  color: #908e8e;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.po.selected {
+  color: var(--blue1);
+  border-bottom: 1px solid var(--blue1);
+  font-weight: bold;
+}
