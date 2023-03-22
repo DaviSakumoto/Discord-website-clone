@@ -354,7 +354,7 @@
 }
 
 .perguntas {
-  height: 650px;
+  height: 800px;
   padding: 40px 30px;
 }
 
@@ -364,6 +364,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .selecionar-titulo {
@@ -388,4 +389,40 @@
   color: var(--blue1);
   border-bottom: 1px solid var(--blue1);
   font-weight: bold;
+}
+
+.po-geral {
+  display: flex;
+  flex-direction: column;
+  gap: 6px
+}
+
+.geral-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  height: 100px;
+  padding: 30px;
+  background-color: var(--gray1);
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.surface {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-titulo {
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.descrip {
+  display: block;
 }
