@@ -424,5 +424,11 @@
 }
 
 .descrip {
-  display: block;
+  margin-top: 10px;
+  display: none;
+  line-height: 1.5;
+  width: 90%;
+  font-size: 15px;
 }
+
+

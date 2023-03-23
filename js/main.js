@@ -6,6 +6,9 @@ const openMenu = document.getElementById("menuOpen");
 const closeMenu = document.getElementById("menuClose");
 const contentMenu = document.getElementById('containerMenu');
 
+//tadgsdg
+const card = document.querySelector('.geral-item');
+
 
 
 
@@ -57,4 +60,21 @@ options.forEach(option => {
     options.forEach(option => option.classList.remove('selected'));
     option.classList.add('selected');
   });
+});
+
+
+card.addEventListener('click', function() {
+
+  if( this.style.height == 100){
+    this.style.height = '300px';
+    this.style.backgroundColor = '#5865f2';
+    this.style.color = 'white';
+  } else {
+    this.style.height == 100;
+  }
+
+
+
+
+
 });
