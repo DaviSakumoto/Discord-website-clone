@@ -8,6 +8,8 @@ const contentMenu = document.getElementById('containerMenu');
 
 //tadgsdg
 const card = document.querySelector('.geral-item');
+const des = document.querySelector('.descrip');
+let isShow = true;
 
 
 
@@ -65,14 +67,22 @@ options.forEach(option => {
 
 card.addEventListener('click', function() {
 
-  if( this.style.height == 100){
-    this.style.height = '300px';
-    this.style.backgroundColor = '#5865f2';
-    this.style.color = 'white';
-  } else {
-    this.style.height == 100;
-  }
+if(isShow) {
+  
+  card.style.height = '200px';
+  card.style.backgroundColor = '#5865f2';
+  card.style.color = 'white';
+  des.style.display = 'block';
+  isShow = false;
 
+} else {
+  card.style.height = '100px';
+  card.style.backgroundColor = '#f6f6f6';
+  card.style.color = 'black';
+  des.style.display = 'none';
+  isShow = true;
+
+}
 
 
 

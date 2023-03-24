@@ -407,6 +407,7 @@
   background-color: var(--gray1);
   border-radius: 10px;
   cursor: pointer;
+  transition: height .1s ease-in;
 
 }
 
