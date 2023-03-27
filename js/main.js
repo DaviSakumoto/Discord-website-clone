@@ -6,11 +6,6 @@ const openMenu = document.getElementById("menuOpen");
 const closeMenu = document.getElementById("menuClose");
 const contentMenu = document.getElementById('containerMenu');
 
-//tadgsdg
-const card = document.querySelector('.geral-item');
-const des = document.querySelector('.descrip');
-let isShow = true;
-
 
 
 
@@ -59,32 +54,77 @@ const options = document.querySelectorAll('.po');
 
 options.forEach(option => {
   option.addEventListener('click', () => {
+
     options.forEach(option => option.classList.remove('selected'));
     option.classList.add('selected');
+
   });
 });
 
 
-card.addEventListener('click', function() {
-
-if(isShow) {
-  
-  card.style.height = '200px';
-  card.style.backgroundColor = '#5865f2';
-  card.style.color = 'white';
-  des.style.display = 'block';
-  isShow = false;
-
-} else {
-  card.style.height = '100px';
-  card.style.backgroundColor = '#f6f6f6';
-  card.style.color = 'black';
-  des.style.display = 'none';
-  isShow = true;
-
-}
 
 
 
 
+const cards = document.querySelectorAll('.geral-item');
+var des = document.querySelectorAll('.descrip');
+let isShow = true;
+
+cards.forEach(opt => {
+  opt.addEventListener('click', () => {
+
+    cards.forEach( card => {
+
+      if(isShow) {
+      
+        opt.style.height = '200px';
+        opt.style.backgroundColor = '#5865f2';
+        opt.style.color = 'white';
+        des.style.display = 'block';
+        isShow = false;
+
+      } else {
+        opt.style.height = '100px';
+        opt.style.backgroundColor = '#f6f6f6';
+        opt.style.color = 'black';
+        des.style.display = 'none';
+        isShow = true;
+      
+      }
+
+    });
+    
+  });
 });
+
+
+
+
+/* cards.forEach(opt => {
+  opt.addEventListener('click', () => {
+
+    cards.forEach( opt => 
+
+    if(isShow) {
+      
+      cards.style.height = '200px';
+      cards.style.backgroundColor = '#5865f2';
+      cards.style.color = 'white';
+      des.style.display = 'block';
+      isShow = false;
+      console.log('cliquei');
+    
+    } else {
+      cards.style.height = '100px';
+      cards.style.backgroundColor = '#f6f6f6';
+      cards.style.color = 'black';
+      des.style.display = 'none';
+      isShow = true;
+    
+    }
+
+    );
+    
+    });
+});
+ */
