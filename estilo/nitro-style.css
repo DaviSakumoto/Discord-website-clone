@@ -407,7 +407,7 @@
   background-color: var(--gray1);
   border-radius: 10px;
   cursor: pointer;
-  transition: height .1s ease-in;
+  transition: height .2s ease-in;
 
 }
 
@@ -430,5 +430,6 @@
   line-height: 1.5;
   width: 90%;
   font-size: 15px;
+
 }
 

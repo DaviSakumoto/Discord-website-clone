@@ -67,64 +67,35 @@ options.forEach(option => {
 
 
 const cards = document.querySelectorAll('.geral-item');
-var des = document.querySelectorAll('.descrip');
-let isShow = true;
+const des = document.querySelectorAll('.descrip');
+let currentCardIndex = -1;
 
-cards.forEach(opt => {
-  opt.addEventListener('click', () => {
-
-    cards.forEach( card => {
-
-      if(isShow) {
-      
-        opt.style.height = '200px';
-        opt.style.backgroundColor = '#5865f2';
-        opt.style.color = 'white';
-        des.style.display = 'block';
-        isShow = false;
-
-      } else {
-        opt.style.height = '100px';
-        opt.style.backgroundColor = '#f6f6f6';
-        opt.style.color = 'black';
-        des.style.display = 'none';
-        isShow = true;
-      
-      }
-
-    });
-    
+cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    if (currentCardIndex !== -1 && currentCardIndex !== index) {
+      // Se há um card aberto e não é o mesmo que foi clicado agora, fecha o card anterior
+      cards[currentCardIndex].style.height = '100px';
+      cards[currentCardIndex].style.backgroundColor = '#f6f6f6';
+      cards[currentCardIndex].style.color = 'black';
+      des[currentCardIndex].style.display = 'none';
+    }
+    if (card.style.height === '100px') {
+      // Se o card clicado estava fechado, abre o card
+      card.style.height = '200px';
+      card.style.backgroundColor = '#5865f2';
+      card.style.color = 'white';
+      des[index].style.display = 'block';
+      currentCardIndex = index;
+    } else {
+      // Se o card clicado estava aberto, fecha o card
+      card.style.height = '100px';
+      card.style.backgroundColor = '#f6f6f6';
+      card.style.color = 'black';
+      des[index].style.display = 'none';
+      currentCardIndex = -1;
+    }
   });
 });
 
 
 
-
-/* cards.forEach(opt => {
-  opt.addEventListener('click', () => {
-
-    cards.forEach( opt => 
-
-    if(isShow) {
-      
-      cards.style.height = '200px';
-      cards.style.backgroundColor = '#5865f2';
-      cards.style.color = 'white';
-      des.style.display = 'block';
-      isShow = false;
-      console.log('cliquei');
-    
-    } else {
-      cards.style.height = '100px';
-      cards.style.backgroundColor = '#f6f6f6';
-      cards.style.color = 'black';
-      des.style.display = 'none';
-      isShow = true;
-    
-    }
-
-    );
-    
-    });
-});
- */
