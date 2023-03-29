@@ -433,3 +433,15 @@
 
 }
 
+.botaomais {
+  font-size: 20px;
+  transition: all .3s ease;
+}
+
+.botaomais:hover {
+  transform: rotate(45deg);
+}
+
+/* .botaomais.rotate {
+  transform: rotate(90deg);
+} */
