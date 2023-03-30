@@ -69,6 +69,7 @@ options.forEach(option => {
 const cards = document.querySelectorAll('.geral-item');
 const des = document.querySelectorAll('.descrip');
 const plusbtn = document.querySelectorAll('.botaomais');
+
 let currentCardIndex = -1;
 
 cards.forEach((card, index) => {
@@ -79,6 +80,7 @@ cards.forEach((card, index) => {
       cards[currentCardIndex].style.backgroundColor = '#f6f6f6';
       cards[currentCardIndex].style.color = 'black';
       des[currentCardIndex].style.display = 'none';
+      plusbtn[currentCardIndex].classList.remove('rotate');
     }
     if (card.style.height === '100px') {
       // Se o card clicado estava fechado, abre o card
@@ -86,7 +88,7 @@ cards.forEach((card, index) => {
       card.style.backgroundColor = '#5865f2';
       card.style.color = 'white';
       des[index].style.display = 'block';
-  /*     plusbtn[index].style.classList.add('rotate'); */
+      plusbtn[index].classList.add('rotate');
       currentCardIndex = index;
     } else {
       // Se o card clicado estava aberto, fecha o card
@@ -94,7 +96,7 @@ cards.forEach((card, index) => {
       card.style.backgroundColor = '#f6f6f6';
       card.style.color = 'black';
       des[index].style.display = 'none';
-   /*    plusbtn[index].style.classList.remove('rotate'); */
+      plusbtn[index].classList.remove('rotate');
       currentCardIndex = -1;
     }
   });
