@@ -50,17 +50,45 @@ window.addEventListener('scroll', function() {
   }
 });
 
-const options = document.querySelectorAll('.po');
 
-options.forEach(option => {
+/* const options = document.querySelectorAll('.po');
+let card = document.querySelector('.crds');
+const geral = document.querySelector('.po-geral');
+const pgmt = document.querySelector('.po_pagamento');
+const present = document.querySelector('.po_presente');
+const outro = document.querySelector('.po_outro');
+
+
+
+ options.forEach(option => {
   option.addEventListener('click', () => {
 
     options.forEach(option => option.classList.remove('selected'));
     option.classList.add('selected');
+    card.insertAdjacentElement('afterbegin', );
+    
+  });
+}); */
 
+
+const options = document.querySelectorAll('.po');
+const card = document.querySelector('.crds');
+const elementos = {
+  geral: document.querySelector('.po-geral'),
+  pgmt: document.querySelector('.po_pagamento'),
+  present: document.querySelector('.po_presente'),
+  outro: document.querySelector('.po_outro')
+};
+
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    options.forEach(option => option.classList.remove('selected'));
+    option.classList.add('selected');
+    const elemento = elementos[option.dataset.option];
+    card.innerHTML = '';
+    card.insertAdjacentElement('afterbegin', elemento);
   });
 });
-
 
 
 
