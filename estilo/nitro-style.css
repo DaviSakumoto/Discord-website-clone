@@ -391,11 +391,14 @@
   font-weight: bold;
 }
 
-.po-geral {
+.po-geral, .po_pagamento, .po_presente, .po_outro {
   display: flex;
   flex-direction: column;
-  gap: 6px
+  gap: 6px;
+  display: none;
 }
+
+
 
 .geral-item {
   position: relative;
@@ -409,6 +412,11 @@
   cursor: pointer;
   transition: height .2s ease-in;
 
+}
+
+.geral-item a {
+  text-decoration: underline;
+  color: var(--white1);
 }
 
 .surface {

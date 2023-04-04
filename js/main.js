@@ -84,9 +84,7 @@ options.forEach(option => {
   option.addEventListener('click', () => {
     options.forEach(option => option.classList.remove('selected'));
     option.classList.add('selected');
-    const elemento = elementos[option.dataset.option];
-    card.innerHTML = '';
-    card.insertAdjacentElement('afterbegin', elemento);
+    card.insertAdjacentElement('afterbegin', elementos.pgmt);
   });
 });
 
