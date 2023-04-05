@@ -73,6 +73,7 @@ const outro = document.querySelector('.po_outro');
 
 const options = document.querySelectorAll('.po');
 const card = document.querySelector('.crds');
+
 const elementos = {
   geral: document.querySelector('.po-geral'),
   pgmt: document.querySelector('.po_pagamento'),
@@ -80,14 +81,28 @@ const elementos = {
   outro: document.querySelector('.po_outro')
 };
 
-options.forEach(option => {
+const elementoPorOption = {
+  0: 'geral',
+  1: 'pgmt',
+  2: 'present',
+  3: 'outro'
+};
+
+options.forEach((option, index) => {
   option.addEventListener('click', () => {
     options.forEach(option => option.classList.remove('selected'));
     option.classList.add('selected');
-    card.insertAdjacentElement('afterbegin', elementos.pgmt);
+    const propriedade = elementoPorOption[index];
+    for (const chave in elementos) {
+      if (chave === propriedade) {
+        elementos[chave].style.display = 'block';
+      } else {
+        elementos[chave].style.display = 'none';
+      }
+    }
+    card.insertAdjacentElement('afterbegin', elementos[propriedade]);
   });
 });
-
 
 
 
