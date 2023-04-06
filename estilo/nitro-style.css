@@ -19,8 +19,11 @@
 }
 
 .myNav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header-wrapper {
@@ -415,6 +418,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: height .2s ease-in;
+  margin-bottom: 10px;
 
 }
 

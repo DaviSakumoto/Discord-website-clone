@@ -255,6 +255,9 @@ html, body{
   background-color: var(--white1);
   animation-name: slideIn;
   animation-duration: 0.3s;
+  z-index: 101;
+ 
+  
 }
 
 

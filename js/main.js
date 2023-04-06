@@ -38,9 +38,6 @@ function outsideClick(e) {
 
 
 
-
-
-
 window.addEventListener('scroll', function() {
   const nav = document.querySelector('.myNav');
   if(window.scrollY > 0) {
@@ -50,25 +47,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
-/* const options = document.querySelectorAll('.po');
-let card = document.querySelector('.crds');
-const geral = document.querySelector('.po-geral');
-const pgmt = document.querySelector('.po_pagamento');
-const present = document.querySelector('.po_presente');
-const outro = document.querySelector('.po_outro');
-
-
-
- options.forEach(option => {
-  option.addEventListener('click', () => {
-
-    options.forEach(option => option.classList.remove('selected'));
-    option.classList.add('selected');
-    card.insertAdjacentElement('afterbegin', );
-    
-  });
-}); */
 
 
 const options = document.querySelectorAll('.po');
