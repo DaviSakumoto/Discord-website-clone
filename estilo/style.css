@@ -450,7 +450,7 @@ main.conexao{
 .footer{
   background-color: var(--black4);
   height: 1050px;
-  padding: 100px 30px
+  padding: 100px 30px;
 }
 
 .social .social-texto{

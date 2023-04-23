@@ -14,8 +14,12 @@
 
 
 .header-body {
-   background: linear-gradient(to bottom, #4262dd, #e28aca);
+   background: linear-gradient(to bottom, #4469e3, #6373e9, #e783ee,  #e28bc7);
    height: 1420px;
+}
+
+#myVideo {
+  display: none;
 }
 
 .myNav {
@@ -26,8 +30,14 @@
   z-index: 100;
 }
 
+.header-text {
+  margin-bottom: 100px;
+}
+
 .header-wrapper {
   width: 80%;
+  position: relative;
+  top: 100px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -65,7 +75,7 @@
 
 .header-card {
   height: 360px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   background-color: red;
   border-radius: 10px;
@@ -101,6 +111,14 @@
   gap: 25px;
   justify-content: space-between;
 }
+
+.header-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
 
 .card-content {
   display: flex;
@@ -175,7 +193,7 @@
   width: 100%;
   text-align: center;
   margin-top: 150px;
-  font-size: 20px;
+  font-size: 30px;
 
 }
 
@@ -357,7 +375,7 @@
 }
 
 .perguntas {
-  height: 800px;
+  height: 1000px;
   padding: 40px 30px;
 }
 
@@ -461,4 +479,71 @@
 
 .crds {
   position: relative;
+}
+
+.libere {
+
+}
+
+
+.libere-body {
+  background: linear-gradient(to bottom right, #8547c6, #b045c2, #ae5896);
+  height: 300px;
+  position: relative;
+}
+
+.libere-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+
+
+
+}
+
+.libere-principal {
+  color: var(--white1);
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: 70%;
+
+}
+
+.libere-btn {
+  margin: auto;
+  display: inline-block;
+  width: 90%;
+  height: 55px;
+  background-color: var(--white1);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 55px;
+  color: var(--black1);
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s ease;
+ 
+}
+
+.libere-btn a{
+  color: var(--black1);
+}
+
+.libere-btn:hover a {
+  color: var(--blue3);
+}
+
+.libere-btn:hover {
+  box-shadow: rgb(38, 57, 77) 0px 15px 10px -10px;
+}
+
+.teste {
+  height: 50px;
+  width: 100%;
+  background-color: red;
 }

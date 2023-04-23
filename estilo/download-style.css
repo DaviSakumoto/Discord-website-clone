@@ -91,6 +91,7 @@
   height: 2100px;
   background-color: var(--white1);
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 
@@ -226,6 +227,3 @@
   background-color: var(--blue3);
 }
 
-.footer {
-  margin-top: 70px;
-}
