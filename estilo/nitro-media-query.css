@@ -79,7 +79,7 @@
   }
 
   .card-wrapper {
-    justify-content: space-between;
+    height: 100%;
   }
 
   .nav-body{
@@ -117,4 +117,135 @@
     text-decoration: underline;
   }
   
+ .main-text {
+    font-size: 3em;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+   margin: auto;
+  }
+
+  .btn-vantagens {
+      width: 20%;
+      height: 50px;
+ 
+    
+  }
+
+  .cardv {
+    width: 60px;
+    
+  }
+
+  .section-cards {
+    text-align: center;
+   
+  }
+
+  .main-section {
+    height: 900px;
+}
+
+
+.section-plano {
+ width: 80%;
+ margin: auto;
+}
+
+.second-texto {
+
+  margin: 50px 0;
+}
+
+.second-texto p {
+  font-size: 3.1em;
+  width: 46%;
+}
+
+.tabela {
+  width: 80%;
+}
+
+.tabela .row{
+  font-size: 1.2rem;
+}
+
+.plano img {
+  display: none;
+}
+
+.planos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.selecionar-titulo{
+  font-size: 3em;
+}
+
+.selecionar-item {
+  width: 30%;
+  margin: auto;
+
+}
+
+.crds{
+  width: 90%;
+  margin: auto;
+
+}
+
+.libere {
+  height: 400px;
+  background: linear-gradient(to bottom right, #8547c6, #b045c2, #ae5896);
+}
+
+.libere-principal{
+  font-size: 2.5em;
+  width: 35%;
+}
+
+.libere-btn {
+  width: 10%;
+}
+
+
+.footer-wrapper{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--blue3);
+
+ 
+}
+
+.footer-wrapper .social{
+  width: 30%;
+  height:fit-content
+}
+
+
+.footer-wrapper .social .social-texto{
+  width: 30%;
+}
+
+.footer-wrapper .listas{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+   margin-top: 6px;
+  border: none;
+  
+}
+
+.footer{
+  height: 650px;
+}
+
+.footer-logo{
+  margin-top: 20px;
+}
 }

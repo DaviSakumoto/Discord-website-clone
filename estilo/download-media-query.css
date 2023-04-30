@@ -49,9 +49,10 @@
     width: 80%;
   }
 
- .header-wrapper {
+ .header-text {
   display: flex;
   flex-direction: row;
+
  }
 
  .header-img img {
@@ -130,6 +131,13 @@
  .header-wrapper {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
+ 
+
+ }
+
+ .header-wrapper .header-text {
+ 
  }
 
  .header-img img {
