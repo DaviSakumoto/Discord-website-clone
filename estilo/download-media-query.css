@@ -29,6 +29,7 @@
 
   .header-text {
     margin-left: 40px;
+  
   }
 
   .header-button {
@@ -46,7 +47,7 @@
   }
 
   .header-button-1 a{
-    width: 80%;
+    width: 50%;
   }
 
  .header-text {
@@ -108,11 +109,20 @@
 
   .header-text {
     margin-left: 40px;
+    width: 70%;
+    line-height: 2.5;
+    position:static;
+    margin-left: 200px;
   }
 
   .header-button {
       display: flex;
       flex-direction: row;
+      width: 100%;
+  }
+
+  .header-button-1 {
+    width: 60%;
   }
 
   .text-main {

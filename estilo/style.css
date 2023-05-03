@@ -412,6 +412,7 @@ main.conexao{
 
 .jornada{
   margin-top: 80px;
+ height: 200px;
 }
 
 .jornada .jornada-text{
@@ -423,11 +424,12 @@ main.conexao{
 }
 
 .jornada .botao a{
-    display: inline-block;
-    margin-top: 40px;
+    display: block;
+    margin-top: 50x;
     height: 60px;
     background-color: var(--blue3);
-    width: 100%;
+    width: 90%;
+    margin: auto;
     border-radius: 50px;
     color: var(--white1);
     text-align: center;

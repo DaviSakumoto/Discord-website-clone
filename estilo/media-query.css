@@ -339,6 +339,11 @@ main{
 
 }
 
+.jornada {
+  height: 200px;
+  
+}
+
 .jornada .jornada-text{
   font-size: 30px;
 }
